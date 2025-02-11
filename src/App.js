@@ -33,9 +33,6 @@ function App() {
     <div className="app">
       <Router>
         {/* <HomeScreen/> */}
-        {!user ? (
-          <LoginScreen />
-        ) : (
           <Switch>
             <Route path="/profile">
               <ProfileScreen />
@@ -44,7 +41,6 @@ function App() {
               <HomeScreen />
             </Route>
           </Switch>
-        )}
       </Router>
     </div>
   );
